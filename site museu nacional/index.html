@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<title>Museu Nacional</title>
+	<!--Normalize css-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- Estilo customizado -->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<div id="container"> <!--Inicio container-->
+		<header> <!--Inicio da Header-->
+
+			<div id="logo">
+				<h1><a href="">Museu Nacional</a></h1>
+			</div>	
+			
+			<nav> <!--Inicio da Nav-->
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Exposiçoes</a></li>
+					<li><a href="">Pesquisa</a></li>
+					<li><a href="">Acervo</a></li>
+					<li><a href="">Vídeos</a></li>
+					<li><a href="">Fotos</a></li>
+					<li><a href="">Contato</a></li>
+				</ul>
+			</nav> <!--Fim da Nav-->
+		</header> <!--Fim da Header-->
+		
+		<div id="principal"> <!--Inicio principal-->
+
+			<div id="conteudo"> <!--Inicio conteudo-->
+				<section id="capa"> <!--Inicio capa-->
+					<img src="img/museu.png">
+				</section> <!--final capa-->
+
+				<section id="postagens">
+
+					<article id="video">
+						
+						<h3>Vídeo: Conheça o Museu</h3>
+						<iframe width="310" height="170" src="https://www.youtube-nocookie.com/embed/RGUYb-hivrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</article>
+						
+					<article id="mapa">
+						<h3>Mapa: Encontre o museu</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.206311665319!2d-43.228717585034445!3d-22.90575998501238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1663094573852!5m2!1spt-BR!2sbr" width="310" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</article>
+
+					<article id="exposicoes">
+						<h3>Exposiçoes</h3>
+						<ul>
+							<li>
+								<a href="">Os assustadores insetos</a>
+							</li>
+							<li>
+								<a href="">O cranio de luzia, a mulher mais antiga do Brasil</a>
+							</li>
+							<li>
+								<a href="">preguiça gigante e tigre-dente-de-sabre</a>
+							</li>
+							<li>
+								<a href="">Plantas do Brasil central</a>
+							</li>
+							<li>
+								<a href="">Teresa cristina: a imperatriz arqueóloga</a>
+							</li>
+							<li>
+								<a href=""><strong>veja todos (65)</strong></a>
+							</li>
+						</ul>
+					</article>
+
+					<article id="historia">
+						<h3> 200 anos de história</h3>
+						<p>O Projeto Museu Nacional Vive, que coordena a reconstrução do Museu Nacional/UFRJ, organizou uma programação gratuita para celebrar o Bicentenário da Independência do Brasil com toda a comunidade.	A partir deste sábado (03), na Quinta da Boa Vista, acontece o evento</p>
+						<a href=""><strong>Leia mais</strong></a>
+					</article>
+
+				</section>
+
+			</div> <!--fim conteudo-->
+
+			<aside> <!--Inicio lateral-->
+				<section id="depoimento">
+					<img src="img/depoimento.png">
+				</section>
+
+				<section id="visita"> <!--Inicio visita-->
+					<h4>Faça uma visita</h4>
+					<form>
+						<fieldset>
+							<legend>Selecione uma data</legend>
+
+							<label for="data">Data</label>
+							<input class="campo" type="text" id="data" value="dd/mm/aaaa">
+
+							<label for="qtd">Qtd Pessoas</label>
+							<input class="campo" style="width: 30px;" type="text" id="qtd" value="1">
+
+						</fieldset>
+
+						<input class="botao" type="submit" value="Verificar disponibilidade">
+					</form>
+				</section> <!--fim visita-->
+
+				<section id="galeria">
+					<h4>Galeria de Fotos</h4>
+
+					<a href="">
+						<img src="img/imagem1.jpg" height="93" width="93">
+					</a>
+
+					<a href="">
+						<img src="img/imagem2.jpg" height="93" width="93">
+					</a>
+
+					<a href="">
+						<img src="img/imagem3.jpg" height="93" width="93">
+					</a>
+
+					<a href="">
+						<img src="img/imagem4.jpg" height="93" width="93">
+					</a>
+				</section>
+			</aside> <!--final lateral-->
+			<footer>
+				<p>
+					<a href="">Home</a>
+					<a href="">Exposiçoes</a>
+					<a href="">Pesquisa</a>
+					<a href="">Acervo</a>
+					<a href="">Vídeos</a>
+					<a href="">Fotos</a>
+					<a href="">Contato</a>
+				</p>
+				<p>
+					2022 <a href="">Museu Nacional</a> - Todos os direitos reservados.
+				</p>
+			</footer>
+		</div> <!--Fim principal-->
+	</div> <!--Fim do container-->
+
+</body>
+</html>
