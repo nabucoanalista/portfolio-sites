@@ -1,355 +1,414 @@
+/* Define a fonte padrão para todos os elementos. 'Montserrat' é a fonte principal e 'sans-serif' é a fonte de backup */
 * {
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  body {
-    background-color: #252525;
-    color: #FFF;
-  }
-  
-  .primary-bg-color {
-    background-color: #252525;
-  }
-  
-  .secondary-bg-color {
-    background-color: #C09578;
-  }
-  
-  .light-bg-color {
-    background-color: #FCF5EB
-  }
-  
-  .dark-bg-color {
-    background-color: #101010;
-  }
-  
-  .primary-color {
-    color: #C09578;
-  }
-  
-  .secondary-color {
-    color: #626262;
-  }
-  
-  .light-color {
-    color: #FCF5EB
-  }
-  
-  /* NAVBAR */
-  #navbar .navbar-nav {
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-  
-  #navbar .navbar-nav li {
-    margin-left: 1em;
-  }
-  
-  #navbar a,
-  #navbar button {
-    color: #FFF;
-  }
-  
-  #navbar li {
-    position: relative;
-  }
-  
-  #navbar i {
-    font-size: 20px;
-  }
-  
-  #navbar span {
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #EF3636;
-    text-align: center;
-  }
-  
-  #bag-item span {
-    left: 20px;
-  }
-  
-  .navbar-brand {
-    font-weight: 700;
-    width: 100%;
-    text-align: center;
-  }
-  
-  @media(min-width: 768px) {
-    .navbar-brand {
-      text-align: left;
-    }
-  }
-  
-  #navbar-items {
-    justify-content: space-between;
-  }
-  
-  @media(min-width: 768px) {
-    #navbar-items {
-      display: flex;
-      min-width: 80%;
-    }
-  }
-  
-  #search-form,
-  #news-form {
-    width: 100%;
-    margin: 2em 0;
-  }
-  
-  @media(min-width: 768px) {
-    #search-form,
-    #news-form {
-      width: 50%;
-      margin: 0;
-    }
-  }
-  
-  #search-form,
-  #news-form {
-    border: 2px solid #626262;
-    border-radius: 3px;
-    padding: 5px 15px;
-  }
-  
-  #search-form input,
-  #news-form input {
-    background-color: transparent;
-    border: none;
-    color: #FFF;
-  }
-  
-  #search-form input:focus,
-  #news-form input:focus {
-    box-shadow: none;
-  }
-  
-  #search-form input::placeholder,
-  #news-form input::placeholder {
-    color: #FFF;
-  }
-  
-  /* BOTTOM NAVBAR */
-  #bottom-navbar-container .container {
-    justify-content: flex-end;
-  }
-  
-  #bottom-navbar-container a {
-    color: #FFF;
-    font-weight: 600;
-  }
-  
-  .navbar-toggler {
-    font-size: 1.5em;
-  }
-  
-  /* BANNERS */
-  #banners-container {
-    padding: 0;
-  }
-  
-  .carousel-caption {
-    bottom: 5em;
-    padding: 1em;
-    left: 12%;
-    right: 12%;
-  }
-  
-  .carousel-caption h5 {
-    font-size: 1.8em;
-  }
-  
-  @media(min-width: 768px) {
-    #slider .carousel-item,
-    #slider img {
-      height: 600px;
-    }
-  
-    .carousel-caption {
-      left: 23%;
-      right: 23%;
-    }
-  
-    .carousel-caption h5 {
-      font-size: 4em;
-    }
-  }
-  
-  /* MINI BANNERS */
-  #mini-banners {
-    margin-top: -3em;
-    z-index: 10;
-  }
-  
-  #mini-banners .col-12 {
-    z-index: 1;
-    height: 300px;
-    padding: 1.5em;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  @media(min-width: 768px) {
-    #mini-banners .col-12 {
-      max-width: 30%;
-    }
-  }
-  
-  #mini-banners .col-12 h2 {
-    text-transform: uppercase;
-    max-width: 50px;
-    font-size: 2.2em;
-    font-weight: 700;
-    line-height: 1em;
-  }
-  
-  #mini-banners .col-12 img {
-    height: 220px;
-    position: absolute;
-    right: 1rem;
-    bottom: 1rem;
-  }
-  
-  #mini-banners .col-12 a {
-    font-weight: bold;
-    color: #FFF;
-    font-size: .8rem;
-    transition: .5s;
-  }
-
-#mini-banners .col-12 a:hover {
-    color: #101010;
+  font-family: 'Montserrat', sans-serif;
 }
 
-#mini-banners #mini-banner-1 a:hover,
-#mini-banners #mini-banner-3 a:hover {
-    color: #C09578;
+/* Define a cor de fundo e a cor do texto do corpo do documento */
+body {
+  background-color: #252525;
+  color: #FFF;
 }
 
-#mini-banners #mini-banner-3 a {
-    color:#101010;
+/* Define a cor de fundo principal. Usada em elementos com a classe "primary-bg-color" */
+.primary-bg-color {
+  background-color: #252525;
 }
 
-/* BEST SELLERS */
-
-#best-sellers {
-    padding: 4em 0;
-}
-
-#best-sellers .row {
-    margin: 0;
-}
-
-#best-sellers .col-md-3 {
-    padding: 0;
-}
-
-.title {
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 2.5em;
-    margin-bottom: 1em;
-    text-align: center;
-}
-
-@media (min-width: 768px) {
-    .title {
-        text-align: left;
-    }
-}
-
-.card {
-  text-align: center;
-  border-radius: 0;
-}
-
-.card img {
-  width: 140px;
-  margin: 2em auto;
-}
-
-.card .card-text {
-  margin: 2em 0;
-  font-weight: bold;
-}
-
-.btn {
-  background-color: transparent;
-  border-color: #C09578;
-}
-
-.btn:hover {
+/* Define a cor de fundo secundária. Usada em elementos com a classe "secondary-bg-color" */
+.secondary-bg-color {
   background-color: #C09578;
-  border-color: #C09578;
 }
 
-/* BOTTOM BANNER */
-
-#bottom-banner {
-    background-color: #101010;
-    padding: 6em;
-    margin-bottom: 4em;
-    text-align: center;
+/* Define a cor de fundo clara. Usada em elementos com a classe "light-bg-color" */
+.light-bg-color {
+  background-color: #FCF5EB;
 }
 
-#bottom-banner .offer-subtitle,
-#bottom-banner h2 {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-#bottom-banner .btn {
-  margin: 2em;
-  font-weight: bold;
-  padding: 1em;
-}
-
-#bottom-banner img {
-  max-width: 175px;
-}
-
-@media (min-width: 768px) {
-  #bottom-banner h2 {
-    font-size: 6em;
-  }
-}
-
-/* NEW PRODUCTS */
-
-#new-products {
-    margin-bottom: 5em;
-}
-
-#new-products-banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* Define a cor de fundo escura. Usada em elementos com a classe "dark-bg-color" */
+.dark-bg-color {
   background-color: #101010;
 }
 
-#new-products-banner h3 {
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 0.5em;
-  font-size: 2.5em;
+/* Define a cor principal. Usada em elementos com a classe "primary-color" */
+.primary-color {
+  color: #C09578;
 }
 
-#new-products .col-md-4 {
+/* Define a cor secundária. Usada em elementos com a classe "secondary-color" */
+.secondary-color {
+  color: #626262;
+}
+
+/* Define a cor clara. Usada em elementos com a classe "light-color" */
+.light-color {
+  color: #FCF5EB;
+}
+  
+/* Estilos para a barra de navegação */
+/* Define a direção e o alinhamento dos itens na barra de navegação */
+#navbar .navbar-nav {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* Define a margem à esquerda dos itens da lista na barra de navegação */
+#navbar .navbar-nav li {
+  margin-left: 1em;
+}
+
+/* Define a cor dos links e botões na barra de navegação */
+#navbar a,
+#navbar button {
+  color: #FFF;
+}
+
+/* Define a posição dos itens da lista na barra de navegação */
+#navbar li {
+  position: relative;
+}
+
+/* Define o tamanho da fonte dos ícones na barra de navegação */
+#navbar i {
+  font-size: 20px;
+}
+
+/* Define a posição, tamanho, forma e cor de fundo dos spans na barra de navegação */
+#navbar span {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #EF3636;
+  text-align: center;
+}
+
+/* Define a posição à esquerda do span no item da bolsa */
+#bag-item span {
+  left: 20px;
+}
+
+/* Define o peso da fonte, a largura e o alinhamento do texto da marca da barra de navegação */
+.navbar-brand {
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+}
+
+/* Em dispositivos com largura de tela de 768px ou mais, alinha o texto da marca da barra de navegação à esquerda */
+@media(min-width: 768px) {
+  .navbar-brand {
+      text-align: left;
+  }
+}
+
+/* Define o alinhamento dos itens na barra de navegação */
+#navbar-items {
+  justify-content: space-between;
+}
+
+/* Em dispositivos com largura de tela de 768px ou mais, exibe os itens da barra de navegação em uma linha e define a largura mínima */
+@media(min-width: 768px) {
+  #navbar-items {
+      display: flex;
+      min-width: 80%;
+  }
+}
+
+/* Define a largura e a margem dos formulários de pesquisa e de notícias */
+#search-form,
+#news-form {
+  width: 100%;
+  margin: 2em 0;
+}
+  
+/* Em dispositivos com largura de tela de 768px ou mais, define a largura e a margem dos formulários de pesquisa e de notícias */
+@media(min-width: 768px) {
+  #search-form,
+  #news-form {
+      width: 50%;
+      margin: 0;
+  }
+}
+
+/* Define a borda, o raio da borda e o preenchimento dos formulários de pesquisa e de notícias */
+#search-form,
+#news-form {
+  border: 2px solid #626262;
+  border-radius: 3px;
+  padding: 5px 15px;
+}
+
+/* Define a cor de fundo, a borda e a cor dos campos de entrada dos formulários de pesquisa e de notícias */
+#search-form input,
+#news-form input {
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+}
+
+/* Remove a sombra dos campos de entrada dos formulários de pesquisa e de notícias quando estão em foco */
+#search-form input:focus,
+#news-form input:focus {
+  box-shadow: none;
+}
+
+/* Define a cor do texto placeholder dos campos de entrada dos formulários de pesquisa e de notícias */
+#search-form input::placeholder,
+#news-form input::placeholder {
+  color: #FFF;
+}
+  
+/* Estilos para a barra de navegação inferior */
+/* Define o alinhamento dos itens no contêiner da barra de navegação inferior */
+#bottom-navbar-container .container {
+  justify-content: flex-end;
+}
+
+/* Define a cor e o peso da fonte dos links na barra de navegação inferior */
+#bottom-navbar-container a {
+  color: #FFF;
+  font-weight: 600;
+}
+
+/* Define o tamanho da fonte do botão de alternância da barra de navegação */
+.navbar-toggler {
+  font-size: 1.5em;
+}
+  
+/* Estilos para os banners */
+/* Remove o preenchimento do contêiner dos banners */
+#banners-container {
   padding: 0;
 }
 
+/* Define a posição, preenchimento e largura da legenda do carrossel */
+.carousel-caption {
+  bottom: 5em;
+  padding: 1em;
+  left: 12%;
+  right: 12%;
+}
+
+/* Define o tamanho da fonte do título h5 na legenda do carrossel */
+.carousel-caption h5 {
+  font-size: 1.8em;
+}
+
+/* Em dispositivos com largura de tela de 768px ou mais, define a altura dos itens do carrossel e das imagens, e ajusta a largura e o tamanho da fonte da legenda do carrossel */
+@media(min-width: 768px) {
+  #slider .carousel-item,
+  #slider img {
+      height: 600px;
+  }
+
+  .carousel-caption {
+      left: 23%;
+      right: 23%;
+  }
+
+  .carousel-caption h5 {
+      font-size: 4em;
+  }
+}
+  
+/* Estilos para os mini banners */
+/* Define a margem superior e o índice z do contêiner dos mini banners */
+#mini-banners {
+  margin-top: -3em;
+  z-index: 10;
+}
+
+/* Define o índice z, a altura, o preenchimento, a posição, o display, a direção do flex e o alinhamento dos itens das colunas de 12 no contêiner dos mini banners */
+#mini-banners .col-12 {
+  z-index: 1;
+  height: 300px;
+  padding: 1.5em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Em dispositivos com largura de tela de 768px ou mais, define a largura máxima das colunas de 12 no contêiner dos mini banners */
+@media(min-width: 768px) {
+  #mini-banners .col-12 {
+      max-width: 30%;
+  }
+}
+
+/* Define a transformação do texto, a largura máxima, o tamanho da fonte, o peso da fonte e a altura da linha dos títulos h2 nas colunas de 12 no contêiner dos mini banners */
+#mini-banners .col-12 h2 {
+  text-transform: uppercase;
+  max-width: 50px;
+  font-size: 2.2em;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+/* Define a altura, a posição, a margem à direita e a margem inferior das imagens nas colunas de 12 no contêiner dos mini banners */
+#mini-banners .col-12 img {
+  height: 220px;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+/* Define o peso da fonte, a cor, o tamanho da fonte e a transição dos links nas colunas de 12 no contêiner dos mini banners */
+#mini-banners .col-12 a {
+  font-weight: bold;
+  color: #FFF;
+  font-size: .8rem;
+  transition: .5s;
+}
+
+/* Define a cor dos links nas colunas de 12 no contêiner dos mini banners quando o mouse passa sobre eles */
+#mini-banners .col-12 a:hover {
+  color: #101010;
+}
+
+/* Define a cor dos links nos mini banners 1 e 3 quando o mouse passa sobre eles */
+#mini-banners #mini-banner-1 a:hover,
+#mini-banners #mini-banner-3 a:hover {
+  color: #C09578;
+}
+
+/* Define a cor dos links no mini banner 3 */
+#mini-banners #mini-banner-3 a {
+  color:#101010;
+}
+
+/* Estilos para os mais vendidos */
+/* Define o preenchimento do contêiner dos mais vendidos */
+#best-sellers {
+  padding: 4em 0;
+}
+
+/* Remove a margem da linha no contêiner dos mais vendidos */
+#best-sellers .row {
+  margin: 0;
+}
+
+/* Remove o preenchimento das colunas md-3 no contêiner dos mais vendidos */
+#best-sellers .col-md-3 {
+  padding: 0;
+}
+
+/* Define a transformação do texto, o peso da fonte, o tamanho da fonte, a margem inferior e o alinhamento do texto do título */
+.title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* Em dispositivos com largura de tela de 768px ou mais, alinha o texto do título à esquerda */
+@media (min-width: 768px) {
+  .title {
+      text-align: left;
+  }
+}
+
+/* Define o alinhamento do texto e o raio da borda do cartão */
+.card {
+text-align: center;
+border-radius: 0;
+}
+
+/* Define a largura e a margem da imagem no cartão */
+.card img {
+width: 140px;
+margin: 2em auto;
+}
+
+/* Define a margem e o peso da fonte do texto do cartão */
+.card .card-text {
+margin: 2em 0;
+font-weight: bold;
+}
+
+/* Define a cor de fundo e a cor da borda do botão */
+.btn {
+background-color: transparent;
+border-color: #C09578;
+}
+
+/* Define a cor de fundo e a cor da borda do botão quando o mouse passa sobre ele */
+.btn:hover {
+background-color: #C09578;
+border-color: #C09578;
+}
+
+/* Estilos para o banner inferior */
+/* Define a cor de fundo, o preenchimento, a margem inferior e o alinhamento do texto do banner inferior */
+#bottom-banner {
+  background-color: #101010;
+  padding: 6em;
+  margin-bottom: 4em;
+  text-align: center;
+}
+
+/* Define a transformação do texto e o peso da fonte do subtítulo da oferta e do título h2 no banner inferior */
+#bottom-banner .offer-subtitle,
+#bottom-banner h2 {
+text-transform: uppercase;
+font-weight: bold;
+}
+
+/* Define a margem, o peso da fonte e o preenchimento do botão no banner inferior */
+#bottom-banner .btn {
+margin: 2em;
+font-weight: bold;
+padding: 1em;
+}
+
+/* Define a largura máxima da imagem no banner inferior */
+#bottom-banner img {
+max-width: 175px;
+}
+
+/* Em dispositivos com largura de tela de 768px ou mais, define o tamanho da fonte do título h2 no banner inferior */
+@media (min-width: 768px) {
+#bottom-banner h2 {
+  font-size: 6em;
+}
+}
+
+/* Estilos para os novos produtos */
+/* Define a margem inferior do contêiner dos novos produtos */
+#new-products {
+  margin-bottom: 5em;
+}
+
+/* Define o display, a direção do flex, o alinhamento dos itens, o alinhamento do conteúdo e a cor de fundo do banner dos novos produtos */
+#new-products-banner {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #101010;
+}
+
+/* Define a transformação do texto, o peso da fonte, a margem inferior e o tamanho da fonte do título h3 no banner dos novos produtos */
+#new-products-banner h3 {
+text-transform: uppercase;
+font-weight: bold;
+margin-bottom: 0.5em;
+font-size: 2.5em;
+}
+
+/* Remove o preenchimento das colunas md-4 no contêiner dos novos produtos */
+#new-products .col-md-4 {
+padding: 0;
+}
+
+/* Define a altura, a largura e a margem da imagem no cartão no contêiner dos novos produtos */
 #new-products .card img {
-  height: 150px;
-  width: 90px;
-  margin: 2em auto;
+height: 150px;
+width: 90px;
+margin: 2em auto;
 }
 
 /* GALLERY */
@@ -391,12 +450,13 @@
   background-image: url(../img/insta6.jpg);
 }
 
-/* FOOTER */
-
+/* Estilos para o rodapé */
+/* Define a borda inferior do contêiner de links do rodapé */
 #footer-links-container {
   border-bottom: 1px solid #626262;
 }
 
+/* Define o preenchimento, a direção do flex, o alinhamento dos itens, o alinhamento do conteúdo e o alinhamento do texto da coluna do rodapé */
 #footer .footer-column {
   padding: 2em;
   flex-direction: column;
@@ -405,45 +465,54 @@
   text-align: center;
 }
 
+/* Em dispositivos com largura de tela de 795px ou mais, define o preenchimento da coluna do rodapé */
 @media (min-width: 795px) {
   #footer .footer-column {
     padding: 5em 2em;
   }
 }
 
+/* Define a margem inferior e a transformação do texto do título h3 no contêiner de links do rodapé */
 #footer-links-container h3 {
   margin-bottom: 25px;
   text-transform: uppercase;
 }
 
+/* Define o tamanho da fonte e o alinhamento do texto dos itens de lista no contêiner de links do rodapé */
 #footer-links-container li {
   font-size: .8em;
   text-align: center;
 }
 
+/* Em dispositivos com largura de tela de 795px ou mais, alinha o texto dos itens de lista à esquerda no contêiner de links do rodapé */
 @media(mn-width: 795px) {
   #footer-links-container li {
     text-align: left;
   }
 }
 
+/* Remove a decoração do texto dos links nos itens de lista no contêiner de links do rodapé */
 #footer-links-container li a {
   text-decoration: none;
 }
 
+/* Define a cor dos links no contêiner de links do rodapé quando o mouse passa sobre eles */
 #footer-links-container a:hover {
   color: #C09578;
 }
 
+/* Define a borda esquerda e a borda direita do centro do rodapé */
 #footer-center {
   border-left: 1px solid #626262;
   border-right: 1px solid #626262;
 }
 
+/* Define o peso da fonte do título h3 no centro do rodapé */
 #footer-center h3 {
   font-weight: 900;
 }
 
+/* Define a cor, o peso da fonte, o tamanho da fonte e a margem superior do telefone da loja no centro do rodapé */
 #footer-center .store-phone {
   color: #C09578;
   font-weight: bold;
@@ -451,32 +520,37 @@
   margin-top: -15px;
 }
 
-/* NEWS */
-
+/* Estilos para a seção de notícias */
+/* Define a borda inferior, o alinhamento do texto e o preenchimento do contêiner da newsletter */
 #newsletter-container {
   border-bottom: 1px solid #626262;
   text-align: center;
   padding: 20px;
 }
 
+/* Define a largura máxima e a margem do formulário de notícias */
 #news-form {
   max-width: 600px;
   margin: 15px auto;
 }
 
+/* Define o tamanho da fonte do ícone no formulário de notícias */
 #news-form i {
   font-size: 1.5em;
 }
 
+/* Define a cor do botão no formulário de notícias */
 #news-form .btn {
   color: #FFF;
 }
 
+/* Define a margem do contêiner social */
 #social-container {
   margin: 20px auto;
 }
 
- #social-container i {
+/* Define o tamanho da fonte, a margem, o cursor, a cor e a transição do ícone no contêiner social */
+#social-container i {
   font-size: 1.5em;
   margin: 10px;
   cursor: pointer;
@@ -484,14 +558,14 @@
   transition: .3s;
 }
 
+/* Define a cor do ícone no contêiner social quando o mouse passa sobre ele */
 #social-container i:hover {
   color: #C09578;
 }
 
-/* COPYRIGHT */
-
+/* Estilos para a seção de direitos autorais */
+/* Define o alinhamento do texto e o preenchimento do contêiner de direitos autorais */
 #copy-container {
   text-align: center;
   padding: 30px;
 }
-
