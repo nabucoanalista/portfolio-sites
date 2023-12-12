@@ -1,0 +1,303 @@
+/* general */
+/* Define a fonte padrão para todo o documento HTML */
+html {
+    font-family: helvetica, sans-serif;
+}
+
+/* header */
+/* Define o estilo para a classe .banner */
+.banner {
+    width: 100%; /* A largura é definida para ocupar 100% do espaço disponível */
+    height: 600px; /* A altura é definida como 600px */
+    background-image: url(../img/capa2.jpg); /* Define a imagem de fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    position: relative; /* Define a posição como relativa */
+}
+
+/* Define o estilo para a classe .box-container */
+.box-container {
+    width: 400px; /* A largura é definida como 400px */
+    height: 200px; /* A altura é definida como 200px */
+    text-align: center; /* Centraliza o texto */
+    position: absolute; /* Define a posição como absoluta */
+    right: 100px; /* Posiciona o elemento 100px à direita do seu ponto de referência */
+    bottom: 250px; /* Posiciona o elemento 250px acima do seu ponto de referência */
+}
+
+/* Define o estilo para a classe .box-background */
+.box-background {
+    width: 100%; /* A largura é definida para ocupar 100% do espaço disponível */
+    height: 100%; /* A altura é definida para ocupar 100% do espaço disponível */
+    background-color: #000; /* Define a cor de fundo como preto */
+    opacity: .8; /* Define a opacidade como 0.8 */
+    position: relative; /* Define a posição como relativa */
+}
+
+/* Define o estilo para a classe .box-banner-title */
+.box-banner-title {
+    position: absolute; /* Define a posição como absoluta */
+    width: 100%; /* A largura é definida para ocupar 100% do espaço disponível */
+    text-align: center; /* Centraliza o texto */
+    top: 0; /* Posiciona o elemento no topo do seu ponto de referência */
+    color: #fff; /* Define a cor do texto como branco */
+    padding-top: 65px; /* Adiciona um padding de 65px no topo */
+}
+
+/* Define o estilo para o h1 dentro da classe .box-banner-title */
+.box-banner-title h1 {
+    font-size: 32px; /* Define o tamanho da fonte como 32px */
+    margin-bottom: 25px; /* Adiciona uma margem de 25px na parte inferior */
+}
+
+/* Define o estilo para o p dentro da classe .box-banner-title */
+.box-banner-title p {
+    font-size: 20px; /* Define o tamanho da fonte como 20px */
+}
+
+/* Define o estilo para a classe .company-info-container */
+.company-info-container {
+    position: absolute; /* Define a posição como absoluta */
+    bottom: 0; /* Posiciona o elemento na parte inferior do seu ponto de referência */
+    width: 100%; /* A largura é definida para ocupar 100% do espaço disponível */
+    height: 175px; /* A altura é definida como 175px */
+}
+
+/* Define o estilo para a classe .company-info-background */
+.company-info-background {
+    width: 100%; /* A largura é definida para ocupar 100% do espaço disponível */
+    height: 100%; /* A altura é definida para ocupar 100% do espaço disponível */
+    background-color: #ddd; /* Define a cor de fundo como #ddd */
+    opacity: .9; /* Define a opacidade como 0.9 */
+}
+
+/* Define o estilo para a classe .company-info-titlebox */
+.company-info-titlebox {
+    position: absolute; /* Define a posição como absoluta */
+    padding-left: 10%; /* Adiciona um padding de 10% à esquerda */
+    top: 40px; /* Posiciona o elemento 40px abaixo do seu ponto de referência */
+    width: 500px; /* A largura é definida como 500px */
+}
+
+/* Define o estilo para o h2 e p dentro da classe .company-info-titlebox */
+.company-info-titlebox h2, .company-info-titlebox p {
+    color: #222; /* Define a cor do texto como #222 */
+}
+
+/* Define o estilo para o h2 dentro da classe .company-info-titlebox */
+.company-info-titlebox h2 {
+    font-size: 24px; /* Define o tamanho da fonte como 24px */
+    margin-bottom: 30px; /* Adiciona uma margem de 30px na parte inferior */
+}
+
+/* SERVIÇOS */
+
+/* Define o estilo para a classe .services-container */
+.services-container {
+    max-width: 1200px; /* Define a largura máxima como 1200px */
+    padding: 30px 10%; /* Adiciona um padding de 30px no topo e na parte inferior, e 10% à esquerda e à direita */
+    padding-bottom: 0; /* Remove o padding na parte inferior */
+}
+
+/* Define o estilo para a classe .service-box */
+.service-box {
+    width: 100%; /* A largura é definida para ocupar 100% do espaço disponível */
+    position: relative; /* Define a posição como relativa */
+    clear: both; /* Limpa os floats à esquerda e à direita */
+    height: 150px; /* A altura é definida como 150px */
+    margin-bottom: 30px; /* Adiciona uma margem de 30px na parte inferior */
+}
+
+/* Define o estilo para a classe .service-box: */
+.service-box:last {
+    margin-bottom: 0; /* Remove a margem na parte inferior */
+}
+
+/* Define o estilo para a classe .service-title */
+.service-title {
+    width: 20%; /* A largura é definida como 20% */
+    height: 150px; /* A altura é definida como 150px */
+    background-color: #ddd; /* Define a cor de fundo como #ddd */
+    float: left; /* Define o elemento como float à esquerda */
+    text-align: center; /* Centraliza o texto */
+    line-height: 150px; /* Define a altura da linha como 150px */
+    padding: 20px; /* Adiciona um padding de 20px */
+    box-sizing: border-box; /* Define o box-sizing como border-box */
+}
+
+/* Define o estilo para a classe .service-title p */
+.service-title p {
+    padding-top: 35px; /* Adiciona um padding de 35px no topo */
+    color: #fff; /* Define a cor do texto como branco */
+    font-size: 18px; /* Define o tamanho da fonte como 18px */
+    line-height: 24px; /* Define a altura da linha como 24px */
+}
+
+/* Define o estilo para a classe .service-description */
+.service-description {
+    width: 80%; /* A largura é definida como 80% */
+    float: left; /* Define o elemento como float à esquerda */
+    padding: 30px; /* Adiciona um padding de 30px */
+    box-sizing: border-box; /* Define o box-sizing como border-box */
+}
+
+/* Define o estilo para a classe .service-description h3 */
+.service-description h3 {
+    font-size: 20px; /* Define o tamanho da fonte como 20px */
+    margin-bottom: 15px; /* Adiciona uma margem de 15px na parte inferior */
+    font-weight: bolder; /* Define o peso da fonte como negrito */
+}
+
+/* Define o estilo para a classe .service-description p */
+.service-description p {
+    font-size: 14px; /* Define o tamanho da fonte como 14px */
+    font-style: bolder; /* Define o estilo da fonte como negrito */
+    line-height: 22px; /* Define a altura da linha como 22px */
+}
+
+/* Cores title */
+
+#gerenciamento-title {
+    color: #2364AA;
+}
+
+#dev-title {
+    color: #3da5d9;
+}
+
+#design-title {
+    color: #73bfb8;
+}
+
+#gerenciamento-box {
+    background-color: #2364AA;
+}
+
+#dev-box {
+    background-color: #3da5d9;
+}
+
+#design-box {
+    background-color: #73bfb8;
+}
+
+/* Sobre a empresa */
+
+.footer-container { /* Seletor para o container do rodapé */
+    background-image: url(../img/rodape.jpg); /* Define a imagem de fundo do container do rodapé */
+    background-position: center; /* Centraliza a imagem de fundo no container do rodapé */
+}
+
+.about-container { /* Seletor para o container sobre */
+    max-width: 1200px; /* Define a largura máxima do container sobre para 1200px */
+    padding: 30px 10%; /* Define o preenchimento do container sobre para 30px na parte superior e inferior e 10% na parte esquerda e direita */
+    position: relative; /* Define a posição do container sobre como relativa */
+    clear: both; /* Limpa os flutuadores à esquerda e à direita */
+}
+
+.about-card { /* seletor para o cartão sobre */
+    float: left; /* Define o cartão sobre como float à esquerda */
+    width: 30%; /* Define a largura do cartão sobre como 30% */
+    padding: 30px; /* Define o preenchimento superior do cartão sobre como 30px */
+    background-color: #fff; /* Define a cor de fundo do cartão sobre como #fff */
+    text-align: center; /* Centraliza o texto do cartão sobre */
+    box-sizing: border-box; /* Define o box-sizing do cartão sobre como border-box */
+}
+
+.middle-card { /* Seletor para o cartão sobre do meio */
+    margin-left: 5%; /* Define a margem esquerda do cartão sobre do meio como 5% */
+    margin-right: 5%; /* Define a margem direita do cartão sobre do meio como 5% */
+}
+
+.about-card i { /* Seletor para o ícone do cartão sobre */
+    font-size: 50px; /* Define o tamanho da fonte do ícone do cartão sobre como 50px */
+    color: #aaa; /* Define a cor do ícone do cartão sobre como #aaa */
+}
+
+.about-card p { /* Seletor para o parágrafo do cartão sobre */
+    margin-top: 50px; /* Define a margem superior do parágrafo do cartão sobre como 50px */
+    font-size: 14px; /* Define o tamanho da fonte do parágrafo do cartão sobre como 14px */
+    line-height: 22px; /* Define a altura da linha do parágrafo do cartão sobre como 22px */
+    color: #888; /* Define a cor do parágrafo do cartão sobre como #888 */
+    text-align: left; /* Alinha o texto do parágrafo do cartão sobre à esquerda */
+}
+
+/* Footer */
+
+footer { /* Seletor para o rodapé */
+    clear: both; /* Limpa os flutuadores à esquerda e à direita */
+    max-width: 1200px; /* Define a largura máxima do rodapé como 1200px */
+    height: 500px; /* Define a altura do rodapé como 500px */
+    padding: 30px 10%; /* Define o preenchimento do rodapé como 30px na parte superior e inferior e 10% na parte esquerda e direita */
+    position: relative; /* Define a posição do rodapé como relativa */
+}
+
+.form-container { /* Seletor para o container do formulário */
+    width: 65%; /* Define a largura do container do formulário como 65% */
+    height: 375px; /* Define a altura do container do formulário como 375px */
+    position: relative; /* Define a posição do container do formulário como relativa */
+    display: block; /* Define o container do formulário como bloco */
+
+}
+
+.form-background { /* Seletor para o fundo do formulário */
+    width: 100%; /* Define a largura do fundo do formulário como 100% */
+    height: 100%; /* Define a altura do fundo do formulário como 100% */
+    background-color: #fff; /* Define a cor de fundo do fundo do formulário como #fff */
+    opacity: .5; /* Define a opacidade do fundo do formulário como 0.5 */
+}
+
+.form-container form { /* Seletor para o formulário */
+    position: absolute; /* Define a posição do formulário como absoluta */
+    top: 30px; /* Define a posição superior do formulário como 30px */
+    left: 30px; /* Define a posição esquerda do formulário como 30px */
+    height: 300px; /* Define a altura do formulário como 300px */
+}
+
+.form-container input, .form-container textarea { /* Seletor para os campos de entrada e área de texto */
+    width: 400px; /* Define a largura dos campos de entrada e área de texto como 400px */
+    display: block; /* Define os campos de entrada e área de texto como bloco */
+    border: none; /* Remove a borda dos campos de entrada e área de texto */
+    padding: 10px; /* Define o preenchimento dos campos de entrada e área de texto como 10px */
+    margin-bottom: 15px; /* Define a margem inferior dos campos de entrada e área de texto como 15px */
+    border-bottom: 1px solid #aaa; /* Define a borda inferior dos campos de entrada e área de texto como 1px sólido #aaa */
+    border-radius: 0; /* Define o raio da borda dos campos de entrada e área de texto como 0 */
+    background-color: transparent; /* Define a cor de fundo dos campos de entrada e área de texto como transparente */
+}
+
+.form-container textarea { /* Seletor para a área de texto */
+    height: 120px; /* Define a altura da área de texto como 120px */
+}
+
+.form-container input::placeholder, .form-container textarea::placeholder { /* Seletor para o texto do espaço reservado */
+    font-size: 14px; /* Define o tamanho da fonte do texto do espaço reservado como 14px */
+}
+
+.form-container .submit { /* Seletor para o botão de envio */
+    background-color: #222; /* Define a cor de fundo do botão de envio como #222 */
+    color: #fff; /* Define a cor do texto do botão de envio como #fff */
+    border: 1px solid transparent; /* Define a borda do botão de envio como 1px sólido transparente */
+    width: 100px; /* Define a largura do botão de envio como 100px */
+    position: relative; /* Define a posição do botão de envio como relativa */
+    float: right; /* Define o botão de envio como float à direita */
+    cursor: pointer; /* Define o cursor do botão de envio como ponteiro */
+    transition: .5s; /* Define a transição do botão de envio como 0.5s */
+}
+
+.form-container .submit:hover { /* Seletor para o botão de envio quando o mouse estiver sobre ele */
+    background-color: #fff; /* Define a cor de fundo do botão de envio como #fff */
+    color: #222; /* Define a cor do texto do botão de envio como #222 */
+    border: 1px solid #222; /* Define a borda do botão de envio como 1px sólido #222 */
+}
+
+.copyright {
+    color: #222; /* Define a cor do texto como #222 */
+    font-size: 14px; /* Define o tamanho da fonte como 14px */
+    font-weight: bolder; /* Define o peso da fonte como negrito */
+    text-align: center; /* Centraliza o texto */
+    position: absolute; /* Define a posição como absoluta */
+    left: 0; /* Posiciona o elemento à esquerda do seu ponto de referência */
+    right: 0; /* Posiciona o elemento à direita do seu ponto de referência */
+    bottom: 30px; /* Posiciona o elemento 30px acima do seu ponto de referência */
+    margin-left: auto; /* Define a margem esquerda como automática */
+    margin-right: auto; /* Define a margem direita como automática */
+}
