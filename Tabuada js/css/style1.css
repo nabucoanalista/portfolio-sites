@@ -1,0 +1,132 @@
+* {
+    margin: 0; /* zera as margens */
+    padding: 0; /* zera o padding */
+    font-family: Helvetica; /* fonte do texto */
+}
+
+body {
+    text-align: center; /* centraliza o texto */
+    padding: 2rem; /* espaçamento do canto da pag para o centro */
+    min-height: 100vh; /* altura minima da pagina */
+    background: linear-gradient(180deg, #000000 0%, #ff0000 100%); /* gradiente de cor */
+    color: #fff; /* cor do texto */
+}
+
+h2 {
+    margin-bottom: 1rem; /* margem inferior */
+}
+
+/* Formatação do formulário */
+
+#multiplication-form { /* id do formulario */
+    display: flex; /* exibe os elementos em linha */
+    justify-content: center; /* centraliza os elementos */
+    align-items: center; /* diferente do justify-content, alinha os elementos verticalmente */
+    flex-wrap: wrap; /* quebra a linha quando não cabe mais elementos */
+    max-width: 300px; /* largura maxima do formulario */
+    margin: 1rem auto; /* margem */
+    padding: 1rem; /* espaçamento interno */
+    background-color: #fff;
+    border-radius: 1rem; /* bordas arredondadas */
+    color: #333;
+}
+
+/* Formatação dos campos do formulário */
+
+.form-control { /* classe dos campos do formulario */
+    display: flex;
+    flex-direction: column; /* alinha os elementos verticalmente */
+    align-items: center;
+    width: 100px; /* largura dos campos */
+    margin: 0 1rem; /* margem */
+}
+
+/* Formatação dos campos do formulário label */
+
+.form-control label { /* label dos campos do formulario a label é o texto que fica acima do campo */
+    margin-bottom: 0.6rem; /* margem inferior */
+    font-size: 0.8rem; /* tamanho da fonte */
+    font-weight: bold;
+}
+
+/* Formatação dos campos do formulário input */
+
+.form-control input { /* input dos campos do formulario */
+    margin-bottom: 1rem;
+    flex: 1; /* ocupa todo o espaço disponível usamos flex para que o input ocupe todo o espaço disponível */
+    padding: 0.6rem 0.4rem; 
+    border: 1px solid #333;
+    width: 50px;
+    border-radius: 5px; /* bordas arredondadas */
+    text-align: center;
+}
+
+/* Formatação do botão do formulário */
+
+#multiplication-form input[type="submit"] { /* botão do formulario, o tipo submit é o botão de enviar */
+    padding: 0.6rem 1.2rem;
+    width: 200px;
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer; /* cursor de mãozinha */
+    font-weight: bold;
+}
+
+/* Formatação do resultado */
+
+#multiplication-operation { /* id do resultado */
+    display: flex; 
+    flex-direction: column; /* alinha os elementos verticalmente */
+    align-items: center;
+    max-width: 300px;
+    margin: 1rem auto;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    color: #333;
+    border-radius: 1rem;
+}
+
+/* Formatação do resultado, row é a linha do resultado */
+
+#multiplication-operation .row { /* classe row do resultado */
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    padding: 0.5rem;
+    width: 150px;
+}
+
+/* Formatação do resultado, row é a linha do resultado o last-child é a ultima linha */
+
+#multiplication-operation .row:last-child {
+    border-bottom: 1px solid #ccc; /* borda inferior coloquamos a borda inferior para a ultima linha para que não fique uma borda embaixo do resultado */
+}
+
+/* Formatação do resultado, result é o resultado da multiplicação */
+
+#multiplication-operation .result {
+    margin-left: 0.4rem; /* margem esquerda */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
