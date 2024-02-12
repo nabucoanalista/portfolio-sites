@@ -4,5 +4,6 @@
 
 # <div align="center">Esclarecendo</div>
 
-<p>O foco do projeto é a responsividade.</p> 
-Menu, imagens, imouts... tudo totalmete responsivo</p>
+<p>O foco do projeto é a responsividade.</p>
+Usei bootstrap 4.</p>
+Menu, imagens, imouts... tudo totalmete responsivo.</p>
