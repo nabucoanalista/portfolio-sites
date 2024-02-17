@@ -1,6 +1,6 @@
 # <div align="center">EFEITO PARALAX</div> 
 
-![](https://github.com/nabucoanalista/portfolio-sites/blob/main/site%20parallax/202402110145.gif)
+![](https://github.com/nabucoanalista/portfolio-sites/blob/main/site_parallax/202402110145.gif)
 
 # <div align="center">Esclarecendo</div>
 
