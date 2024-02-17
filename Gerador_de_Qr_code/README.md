@@ -1,9 +1,8 @@
-# <div align="center">Gerador de Qr Code</div>
+# <div align="center">Clone site iphone</div>
 
-![](https://github.com/nabucoanalista/portfolio-sites/blob/main/Gerador%20de%20Qr%20code/apresentar.gif)
+![](https://github.com/nabucoanalista/portfolio-sites/blob/main/Clone%20pag%20iphone/vid%20ap.gif)
 
 # <div align="center">Esclarecendo</div>
 
 <p>Projeto em HTML, CSS, JS.</p> 
-Podemos gerar o QR CODE clicando no botão ou danto um ENTER.</br>
-Quando voce apaga limpa tambem a qr.
+Site responsivo e com efeito legal de transição.</br>
