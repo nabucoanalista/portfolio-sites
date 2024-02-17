@@ -1,6 +1,6 @@
 # <div align="center">Exact time</div>
 
-![](https://github.com/nabucoanalista/portfolio-sites/blob/main/site%20e%20comerce%20relogio/vid.gif)
+![](https://github.com/nabucoanalista/portfolio-sites/blob/main/site_e_comerce_relogio/vid.gif)
 
 # <div align="center">Esclarecendo</div>
 
