@@ -1,6 +1,6 @@
 # <div align="center">Login / Cadastro</div>
 
-![](https://github.com/nabucoanalista/portfolio-sites/blob/main/tela%20de%20login%20avançada/77139387-34d6-4ff1-9c70-d796f9e3defd.gif)
+![](https://github.com/nabucoanalista/portfolio-sites/blob/main/tela_de_login_avançada/77139387-34d6-4ff1-9c70-d796f9e3defd.gif)
 
 # <div align="center">Esclarecendo</div>
 
