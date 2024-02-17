@@ -1,0 +1,224 @@
+/* Geral */
+
+* {
+    margin: 0; /* zera as margens */
+    padding: 0; /* zera o padding */
+    font-family: verdana; /* define a fonte */
+}
+
+ul { /* ul = é uma lista não ordenada */
+    list-style: none; /* remove as bolinhas das listas */
+}
+
+a { /* a = link */
+    text-decoration: none; /* remove o sublinhado dos links */
+}
+
+/* Navbar */
+
+header nav { /* nav = navegação */
+    background-color: #333; /* cor de fundo */
+}
+
+#navbar { /* navbar = barra de navegação */
+    display: flex; /* alinha os itens na horizontal */
+    justify-content: space-around; /* distribui o espaço entre os itens */
+    align-items: center; /* alinha os itens verticalmente */
+    font-size: 0.7rem; /* tamanho da fonte */
+    padding: 0 1rem; /* espaçamento interno */
+    max-width: 1000px; /* largura máxima */
+    margin: 0 auto; /* centraliza */
+}
+
+#navbar a { /* vai estilizar os links da barra de navegação */
+    color: #f5f5f7; /* cor do texto */
+    transition: .4s; /* suaviza a transição */
+}
+
+#navbar a:hover { /* quando passar o mouse por cima do link */
+    color: #fff; /* cor do texto */
+    text-decoration: underline; /* sublinhado */
+}
+
+#bottom-header { /* bottom-header = cabeçalho inferior */
+    font-size: 0.8rem; /* tamanho da fonte */
+    padding: 1rem; /* espaçamento interno */
+    border-bottom: 1px solid #ccc; /* borda inferior */    
+}
+
+#bottom-header h3 { /* h3 = título de terceiro nível */
+    font-size: 1.2rem; /* tamanho da fonte */
+}
+
+#bottom-header a { /* bottom-header a = link do cabeçalho inferior */
+    color: #333; /* cor do texto */
+}
+
+#bottom-header-inner { /* bottom-header-inner = cabeçalho inferior interno */
+    max-width: 1000px; /* largura máxima */
+    margin: 0 auto; /* centraliza */
+    display: flex; /* alinha os itens na horizontal */
+    justify-content: space-between; /* distribui o espaço entre os itens */
+    align-items: center; /* alinha os itens verticalmente */
+}
+
+#bottom-header-inner a { /* bottom-header-inner a = link do cabeçalho inferior interno */
+    margin: 0 0.5rem; /* espaçamento externo */
+}
+
+#bottom-header-inner .btn,
+.btn { /* vai estilizar os botões */
+    background: #0071e3; /* cor de fundo */
+    border-radius: 10rem; /* arredonda as bordas */
+    padding: .4rem 1rem; /* espaçamento interno */
+    color: #fff; /* cor do texto */
+}
+    
+/* Conteúdo */
+
+#ribbon { /* ribbon = faixa */
+    text-align: center; /* alinha o texto no centro */
+    padding: 1rem; /* espaçamento interno */
+    background-color: #f5f5f7; /* cor de fundo */
+    color: #1d1d1d; /* cor do texto */
+    font-size: 0.8rem; /* tamanho da fonte */
+}
+
+#ribbon a { /* ribbon a = link da faixa */
+    color: #0071e3; /* cor do texto */
+}
+
+#main-content { /* main-content = conteúdo principal */
+    text-align: center; /* alinha o texto no centro */
+    color: #1d1d1d; /* cor do texto */
+    display: flex; /* alinha os itens na horizontal */
+    flex-direction: column; /* alinha os itens na vertical */
+    justify-content: center; /* distribui o espaço entre os itens */
+}
+
+#main-content #title { /* main-content #title = título do conteúdo principal */
+    margin: 1rem; /* espaçamento externo */
+    font-size: 1.2rem; /* tamanho da fonte */
+}
+
+#main-content #subtitle { /* main-content #subtitle = subtítulo do conteúdo principal */
+    margin: 1rem; /* espaçamento externo */
+    font-size: 1.2rem; /* tamanho da fonte */
+    font-size: 4rem; /* tamanho da fonte */
+    font-weight: bold; /* negrito */
+}
+
+#main-content #description { /* main-content #description = descrição do conteúdo principal */
+    max-width: 600px; /* largura máxima */
+    margin: 1rem auto; /* centraliza */
+    font-size: 1.5rem; /* tamanho da fonte */
+    line-height: 1.5rem; /* altura da linha */
+}
+
+#main-content #price { /* main-content #price = preço do conteúdo principal */
+    font-size: 1.3rem; /* tamanho da fonte */
+    color: #8686868b; /* cor do texto */
+    margin: 2rem; /* espaçamento externo */
+}
+
+#main-content .btn { /* main-content .btn = botão do conteúdo principal */
+    font-size: 1.1rem; /* tamanho da fonte */
+    padding: 0.8rem 1.4rem; /* espaçamento interno */
+    align-self: center; /* alinha o item verticalmente */
+}
+
+#main-content #product-image { /* main-content #product-image = imagem do conteúdo principal */
+    max-width: 1000px; /* largura máxima */
+    margin: 3rem auto; /* centraliza */
+    opacity: 1; /* opacidade */
+    transition: 0.5s; /* suaviza a transição */
+}
+
+#main-content #product-image.changing { /* main-content #product-image.changing = imagem do conteúdo principal mudando */
+    opacity: 0.5; /* opacidade */
+}
+
+#image-picker { /* image-picker = seletor de imagem */
+    margin-bottom: 500px; /* margem inferior */
+}
+
+#image-picker ul { /* image-picker ul = lista de seleção de imagem */
+    display: flex; /* alinha os itens na horizontal */
+    justify-content: center; /* distribui o espaço entre os itens */
+}
+
+#image-picker li { /* image-picker li = item da lista de seleção de imagem */
+    margin: 1rem; /* espaçamento externo */
+    display: flex; /* alinha os itens na horizontal */
+    flex-direction: column; /* alinha os itens na vertical */
+    align-items: center; /* alinha os itens verticalmente */
+    cursor: pointer; /* cursor */
+}
+
+#image-picker li .color { /* image-picker li .color = cor do item da lista de seleção de imagem */
+    width: 2rem; /* largura */
+    height: 2rem; /* altura */
+    border-radius: 50%; /* arredonda as bordas */
+    box-shadow: 1px 1px 1px; /* sombra */
+    border: 4px solid #fff; /* borda */
+    pointer-events: none; /* eventos do ponteiro */
+}
+
+#image-picker li .description { /* image-picker li .description = descrição do item da lista de seleção de imagem */
+    font-size: 0.7rem; /* tamanho da fonte */
+    color: #1d1d1d; /* cor do texto */
+    margin-top: 0.6rem; /* margem superior */
+}
+
+#green .color { /* green.color = cor verde */
+    background-color: #394c38; /* cor de fundo */
+}
+
+#silver .color { /* silver.color = cor prata */
+    background-color: #f1f2ed; /* cor de fundo */
+}
+
+#gold .color { /* gold.color = cor dourada */
+    background-color: #fae7cf; /* cor de fundo */
+}
+
+#grafite .color { /* grafite.color = cor grafite */
+    background-color: #54524f; /* cor de fundo */
+}
+
+#blue .color { /* blue.color = cor azul */
+    background-color: #a7c1d9; /* cor de fundo */
+}
+
+.selected { /* selected = selecionado */
+    outline: 2px solid #43a1ff; /* contorno */
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+    #navbar li { /* navbar li = item da barra de navegação */
+        display: none; /* esconde */
+    }
+
+    #navbar #logo { /* navbar #logo = logo da barra de navegação */
+        display: flex; /* alinha os itens na horizontal */
+    }
+
+    #bottom-header-links a { /* bottom-header-links a = link do cabeçalho inferior */
+        display: none; /* esconde */
+    }
+
+    #bottom-header-links .btn { /* bottom-header-links .btn = botão do cabeçalho inferior */
+        display: flex; /* alinha os itens na horizontal */
+    }
+
+    #main-content { /* main-content = conteúdo principal */
+        padding: 2rem; /* espaçamento interno */
+        overflow: hidden; /* esconde o conteúdo que ultrapassa o tamanho */
+    }
+
+    #main-content #subtitle { /* main-content #subtitle = subtítulo do conteúdo principal */
+        font-size: 3rem; /* tamanho da fonte */
+    }
+}
