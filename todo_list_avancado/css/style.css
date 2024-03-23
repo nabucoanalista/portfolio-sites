@@ -1,0 +1,165 @@
+/* Geral */
+
+* { /* configuração para resetar o css */
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    color: #333;
+    box-sizing: border-box;
+}
+
+body { /* configuração do body */
+    background-image: url("../img/beck.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+button { /* configuração do botão */
+    background-color: #FDFDFD;
+    color: #102F5e;
+    border: 2px solid #102F5e;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover { /* configuração do botão ao passar o mouse */
+    background-color: #102F5e;
+    color: #fff;
+}
+
+button:hover > i { /* configuração do botão ao passar o mouse */
+    color: #fff;
+}
+
+button i { /* configuração do botão */
+    color: #102F5e;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input,
+select { /* configuração do input e select */
+    padding: 0.25rem 0.5rem;
+}
+
+.hide { /* configuração para esconder */
+    display: none;
+}
+
+/* Todo header */
+
+.todo-container { /* configuração do container */
+    max-width: 450px;
+    margin: 3rem auto 0;
+    background-color: #FDFDFD;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.todo-container header { /* configuração do header */
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Todo form */
+
+#todo-form, 
+#edit-form { /* configuração do form */
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#todo-form p,
+#edit-form p { /* configuração do parágrafo */
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control { /* configuração do form */
+    display: flex;
+}
+
+.form-control input { /* configuração do input */
+    margin-right: 0.3rem;
+}
+
+#cancel-edit-btn { /* configuração do botão */
+    margin-top: 1rem;
+}
+
+/* Todo toolbar */
+
+#toolbar { /* configuração do toolbar */
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+#toolbar h4 { /* configuração do h4 */
+    margin-bottom: 5rem;
+}
+
+#search { /* configuração do search */
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form { /* configuração do form */
+    display: flex;
+}
+
+#search input { /* configuração do input */
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filter { /* configuração do filter */
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select { /* configuração do select */
+    flex: 1;
+}
+
+/* Todo list */
+
+.todo { /* configuração do todo */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: .3s;
+}
+
+.todo h3 { /* configuração do h3 */
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.todo button { /* configuração do botão */
+    margin-left: 0.4rem;
+}
+
+.done { /* configuração do done */
+    background-color: #395169;
+    border-radius: 10px;
+}
+
+.done h3 { /* configuração do h3 */
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+}
