@@ -1,0 +1,2 @@
+gerador_de_senhas/app.gif filter=lfs diff=lfs merge=lfs -text
+gerador_de_senhas/resumo.gif filter=lfs diff=lfs merge=lfs -text
