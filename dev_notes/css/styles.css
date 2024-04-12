@@ -150,3 +150,53 @@ header {
   background-color: #3c3c3f;
 }
 
+/* Responsividade */
+
+@media (max-width: 450px) { /* Apenas para telas menores que 450px */
+  
+  header {
+    flex-direction: column; /* Altera a direção dos itens */
+    gap: 1rem; /* Espaçamento entre os itens */
+    width: 100%; /* Largura total */
+  }
+
+  #search-container {
+    width: 100%; /* Largura total */
+  }
+
+  #search-input {
+    width: 100%; /* Largura total */
+  }
+
+  #add-note-container {
+    width: 100%; /* Largura total */
+    padding: 0 2rem; /* Espaçamento nas laterais */
+  }
+
+  #notes-container {
+    grid-template-columns: repeat(auto-fill, 100%); /* Uma coluna por vez */
+  }
+    
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
